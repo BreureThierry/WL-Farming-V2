@@ -39,8 +39,8 @@ for (const file of eventFiles) {
 	}
 }
 
-// Tâche Cron : exécute le backup toutes les heures
-cron.schedule('0 * * * *', () => {
+// Tâche Cron : exécute un backup tous les jour à 00:00
+cron.schedule('0 0 * * *', () => {
     console.log('[Backup] Sauvegarde horaire en cours...');
     backupDatabase();
 });
