@@ -24,9 +24,9 @@ Vous pouvez également vendre vos plantes pour gagner de l'argent que vous pouve
 
 ## Backup des données
 
-- Une sauvegarde des données utilisateur est éffectuée toutes les heures, un fichier .zip est créé dans le dossier "backups", nommé au format de date `JJ-MM-AAAA_-_HH-MM`.
+- Une sauvegarde des données utilisateur est éffectuée chaque jour à 00:00, un fichier .zip est créé dans le dossier "backups", nommé au format de date `JJ-MM-AAAA_-_HH-MM`.
   
-- Attention ! selon la capacité de votre hébergement il est préférable de supprimer les backups les plus anciens fréquemment (*Gardez les 10 derniers*).
+- Attention ! pensez à supprimer les backups les plus anciens fréquemment, par exemple une fois par mois (*Gardez les 10 derniers*).
 
 
 ## Commandes de jeu <permission: utilisateur>
@@ -289,9 +289,9 @@ Modifiez les prix, les valeurs et les temps selon vos préférences.
 ## Maintenance et bug connu ⚠️
 
 Un bug vide le fichier de sauvegarde d'un utilisateur, ce qui l'empèche d'utiliser le bot et lui fait perdre sa progression.
-Un système de backup a donc été mis en place afin de limité la casse, une sauvegarde est éffectuée dans le dossier "backups" toutes les heures.
+Un système de backup a donc été mis en place afin de limité la casse, une sauvegarde est éffectuée dans le dossier "backups" chaque jour.
 Le dossier est compressé en .zip et nommé au format de date JJ-MM-AAAA_-_HH-MM.
-Il est primordial de nettoyer les backups lorsqu'ils s'accumulent trop, je recommande de conserver les 10/20 derniers backups.
+Il est primordial de nettoyer les backups lorsqu'ils s'accumulent trop, je recommande de conserver les 10 derniers backups.
 Cela permet de récupérer une sauvegarde récente d'un utilisateur qui subirai ce bug.
 A ce jour, aucun correctif n'a été appliqué à ce problème, libre à vous d'y jeter un œil, d'après moi cela pourrais venir de la fonction saveDb() dans le fichier "fonctions.js".
 
